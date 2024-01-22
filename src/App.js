@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import {Route,Routes} from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+import './App.css'
+import Navbar from './components/Navbar';
+import Home from './components/Home/Home';
+import PreRegistration from './components/PreReg/PreReg';
+import CourseClash from './components/CourseClash/CourseClash';
+import Courses from './components/Courses/Courses';
+import Login from './components/Login';
+import Signup from './components/Signup';
+import Announcement from './components/Announcement/Announcement';
 
-function App() {
+
+const App =()=>{
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+     <Navbar/>
+    <Routes>
+      <Route exact path='/' element={<Home/>}></Route>
+      <Route path='/preregistration' element={<PreRegistration/>}></Route>
+      <Route path='/courseclash' element={<CourseClash/>}></Route>
+      <Route path='/courses' element={<Courses/>}></Route>
+      <Route path='/announcement' element={<Announcement/>}></Route>
+      <Route path='/login' element={<Login/>}></Route>
+      <Route path='/signup' element={<Signup/>}></Route>
+    </Routes>
+    </>
+  )
 }
 
-export default App;
+export default App
