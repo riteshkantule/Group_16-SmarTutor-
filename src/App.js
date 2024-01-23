@@ -1,6 +1,6 @@
 import React from 'react';
 import {Route,Routes} from "react-router-dom";
-import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/css/bootstrap.css'
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import './App.css'
 import Navbar from './components/Navbar';

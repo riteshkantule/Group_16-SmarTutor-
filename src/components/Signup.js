@@ -15,7 +15,7 @@ from 'mdb-react-ui-kit';
 
 function Signup() {
   return (
-    <MDBContainer fluid>
+    <MDBContainer fluid >
 
       <MDBCard className='text-black m-5' style={{borderRadius: '25px'}}>
         <MDBCardBody>
@@ -29,11 +29,11 @@ function Signup() {
                 <MDBInput label='Your Name' id='form1' type='text' className='w-100'/>
               </div>
 
-              <div className="d-flex flex-row align-items-center mb-4">
+              <div className="d-flex flex-row align-items-center mb-4 ">
                 <MDBIcon fas icon="envelope me-3" size='lg'/>
                 <MDBInput label='Your Email' id='form2' type='email'/>
               </div>
-              <div className="d-flex flex-row align-items-center mb-4">
+              <div className="d-flex flex-row align-items-center mb-4 ">
                 <MDBIcon fas icon="mobile me-3" size='lg'/>
                 <MDBInput label='Your Phone Number' id='form2' type='tel'/>
               </div>
